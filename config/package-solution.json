@@ -1,13 +1,13 @@
 {
   "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "cat-dsg-sp-wp-daily-snapshot-web-part-client-side-solution",
+    "name": "cat-dsg-sp-wp-1002-daily-snapshot-client-side-solution",
     "id": "3d2605c8-d35e-42ed-888c-fca95034759b",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true
   },
   "paths": {
-    "zippedPackage": "solution/cat-dsg-sp-wp-daily-snapshot-web-part.sppkg"
+    "zippedPackage": "solution/cat-dsg-sp-wp-1002-daily-snapshot.sppkg"
   }
 }

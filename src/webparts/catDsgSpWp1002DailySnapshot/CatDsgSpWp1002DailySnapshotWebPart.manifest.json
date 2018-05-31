@@ -14,13 +14,16 @@
   "requiresCustomScript": false,
 
   "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
-    "group": { "default": "Other" },
-    "title": { "default": "catDsgSpWp1002DailySnapshot" },
+    "groupId": "59a98142-add4-4747-8d48-029b0b0ab8d9",
+    "group": {
+      "default": "Catapult Systems"
+    },
+    "title": { "default": "Daily Snapshot" },
     "description": { "default": "Displays a photo with a caption." },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "catDsgSpWp1002DailySnapshot"
+      "description": "Displays a photo with a caption.",
+      "listName":"Daily Snapshots"
     }
   }]
 }

@@ -1,7 +1,7 @@
 {
   "@microsoft/generator-sharepoint": {
     "version": "1.4.1",
-    "libraryName": "cat-dsg-sp-wp-daily-snapshot-web-part",
+    "libraryName": "cat-dsg-sp-wp-daily-snapshot",
     "libraryId": "3d2605c8-d35e-42ed-888c-fca95034759b",
     "environment": "spo"
   }
