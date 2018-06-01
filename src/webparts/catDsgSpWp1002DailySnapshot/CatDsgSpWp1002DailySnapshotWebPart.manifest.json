@@ -20,10 +20,11 @@
     },
     "title": { "default": "Daily Snapshot" },
     "description": { "default": "Displays a photo with a caption." },
-    "officeFabricIconFontName": "Page",
+    "officeFabricIconFontName": "PictureFill",
     "properties": {
       "description": "Displays a photo with a caption.",
-      "listName":"Daily Snapshots"
+      "listName":"Daily Snapshots",
+      "fileTypes":"jpg;png;bmp"
     }
   }]
 }
