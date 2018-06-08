@@ -11,7 +11,6 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import styles from './CatDsgSpWp1002DailySnapshotWebPart.module.scss';
 import * as strings from 'CatDsgSpWp1002DailySnapshotWebPartStrings';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
-require('./CatDsgSpWp1002DailySnapshotWebPart.scss');
 
 export interface ICatDsgSpWp1002DailySnapshotWebPartProps {
   description: string;
@@ -51,7 +50,7 @@ export default class CatDsgSpWp1002DailySnapshotWebPart extends BaseClientSideWe
     this.domElement.innerHTML = `
       <div class="${ styles.catDsgSpWp1002DailySnapshot}">
         <div class="${ styles.container}">
-          <div class="catDsgSpWp1002DailySnapshotImageWrapper">
+          <div class="${styles.catDsgSpWp1002DailySnapshotImageWrapper}">
           </div>
         </div>
       </div>`;
@@ -65,19 +64,19 @@ export default class CatDsgSpWp1002DailySnapshotWebPart extends BaseClientSideWe
         if (snapShots.value.length > 0) {
           var latestSnapshot = snapShots.value[0];
           let dailySnapshotHtml: string = `
-        <div class="catDsgSpWp1002DailySnapshotImageWrapperDataSignature">
-            <div class="image-area-left">
+        <div class="${styles.catDsgSpWp1002DailySnapshotImageWrapperDataSignature}">
+            <div>
                 <img src="${latestSnapshot.FileRef}" title="${latestSnapshot.Title == null ? '' : latestSnapshot.Title}">
             </div>
             <br>
-            <div class="catDsgSpWp1002DailySnapshotComments">${latestSnapshot.OData__Comments == null ? '' : latestSnapshot.OData__Comments}</div>
+            <div class="${styles.catDsgSpWp1002DailySnapshotComments}">${latestSnapshot.OData__Comments == null ? '' : latestSnapshot.OData__Comments}</div>
           </div>
-          <div class="catDsgSpWp1002DailySnapshotMorelink">
+          <div class="${styles.catDsgSpWp1002DailySnapshotMorelink}">
             <a href="${this.snapShotListServerRelativeUrl}">${strings.catDsgSpWp1002DailySnapshotAddPhotoLinkText}</a>
           </div>
         </div>
         `;
-          this.domElement.querySelector(".catDsgSpWp1002DailySnapshotImageWrapper").innerHTML = dailySnapshotHtml;
+          this.domElement.querySelector("."+styles.catDsgSpWp1002DailySnapshotImageWrapper).innerHTML = dailySnapshotHtml;
         }
       }, (error: any) => {
         this.context.statusRenderer.renderError(this.domElement, error);

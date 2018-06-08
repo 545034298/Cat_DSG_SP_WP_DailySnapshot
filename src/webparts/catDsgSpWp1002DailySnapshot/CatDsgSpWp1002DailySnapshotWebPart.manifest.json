@@ -18,8 +18,12 @@
     "group": {
       "default": "Catapult Systems"
     },
-    "title": { "default": "Daily Snapshot" },
-    "description": { "default": "Displays a photo with a caption." },
+    "title": { 
+      "default": "Daily Snapshot",
+      "zh-cn":"每日快照" },
+    "description": { 
+      "default": "Displays a photo with a caption.",
+      "zh-cn":"显示每日快照图片和标题" },
     "officeFabricIconFontName": "PictureFill",
     "properties": {
       "description": "Displays a photo with a caption.",
