@@ -1,8 +1,8 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Description",
-    "BasicGroupName": "Group Name",
-    "DescriptionFieldLabel": "Description Field",
+    "PropertyPaneDescription": "Settings",
+    "BasicGroupName": "Basic Settings",
+    "DescriptionFieldLabel": "Introduction",
     "catDsgSpWp1002DailySnapshotDropdownLabelListName":"List Name",
     "catDsgSpWp1002DailySnapshotListNameRequiredMessage":"List Name is required",
     "catDsgSpWp1002DailySnapshotAddPhotoLinkText":"Add Photo",

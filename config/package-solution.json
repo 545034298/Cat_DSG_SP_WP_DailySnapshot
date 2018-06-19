@@ -1,7 +1,7 @@
 {
   "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "cat-dsg-sp-wp-1002-daily-snapshot-client-side-solution",
+    "name": "Catapult Systems - Daily Snapshot",
     "id": "3d2605c8-d35e-42ed-888c-fca95034759b",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
